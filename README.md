@@ -3,12 +3,12 @@
 SUMMARY:
 
 Sorting algorithms arrange data in ascending or descending order. Different sorting methods have different approaches and performance.
-Bubble Sort: Simple but slow for large datasets.
-Selection Sort: Selects the smallest/largest element and places it in the correct position.
-Insertion Sort: Inserts each element into its correct position; good for small or nearly sorted data.
-Merge Sort: Uses divide-and-conquer and provides O(n log n) performance.
-Quick Sort: Fast and efficient in most cases, with O(n log n) average time.
-Overall: The best sorting method depends on data size, speed requirements, memory, and whether the data is already partially sorted.
+Bubble Sort is Simple but slow for large datasets.
+Selection Sort is Selects the smallest/largest element and places it in the correct position.
+Insertion Sort inserts each element into its correct position,good for small or nearly sorted data.
+Merge Sort Uses divide-and-conquer and provides O(n log n) performance.
+Quick Sort is Fast and efficient in most cases, with O(n log n) average time and
+Overall The best sorting method depends on data size, speed requirements, memory, and whether the data is already partially sorted.
 
 
 CONCLUSION:
