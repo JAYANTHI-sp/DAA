@@ -1,0 +1,74 @@
+
+
+import time
+
+def matrix_chain_order(p):
+    n = len(p) - 1
+
+    dp = [[0 for _ in range(n)] for _ in range(n)]
+
+    for length in range(2, n + 1):
+        for i in range(n - length + 1):
+            j = i + length - 1
+            dp[i][j] = float('inf')
+
+            for k in range(i, j):
+                cost = (
+                    dp[i][k]
+                    + dp[k + 1][j]
+                    + p[i] * p[k + 1] * p[j + 1]
+                )
+
+                if cost < dp[i][j]:
+                    dp[i][j] = cost
+
+    return dp[0][n - 1]
+
+
+print("CHAIN MATRIX MULTIPLICATION USING DYNAMIC PROGRAMMING")
+
+n = int(input("Enter the number of matrices: "))
+
+dimensions = []
+
+print("\nEnter the dimensions of each matrix:")
+
+for i in range(n):
+    rows = int(input(f"Enter number of rows for Matrix {i + 1}: "))
+
+    if i == 0:
+        cols = int(input(f"Enter number of columns for Matrix {i + 1}: "))
+        dimensions.append(rows)
+        dimensions.append(cols)
+    else:
+        cols = int(input(
+            f"Enter number of columns for Matrix {i + 1} "
+            f"(rows must be {dimensions[-1]}): "
+        ))
+
+        if rows != dimensions[-1]:
+            print("Invalid dimensions! Rows of the current matrix "
+                  "must match columns of the previous matrix.")
+            exit()
+
+        dimensions.append(cols)
+
+
+start_time = time.perf_counter()
+
+minimum_cost = matrix_chain_order(dimensions)
+
+end_time = time.perf_counter()
+
+execution_time = end_time - start_time
+
+
+print("\nMatrix Dimensions:", dimensions)
+
+print("Minimum number of scalar multiplications:",
+      minimum_cost)
+
+print("Execution Time: {:.9f} seconds".format(execution_time))
+
+print("\nTime Complexity: O(n^3)")
+print("Space Complexity: O(n^2)")
