@@ -82,3 +82,36 @@ The Matrix Chain Multiplication problem demonstrates how Dynamic Programming can
 
 
 
+
+# practical8
+
+summary:
+
+The implementation of Graph Traversal using DFS and BFS demonstrates how a graph can be represented using an adjacency list and traversed using two different searching techniques. DFS (Depth First Search) visits nodes by going as deep as possible before backtracking, while BFS (Breadth First Search) visits nodes level by level using a queue.
+
+Conclusion:
+
+Thus, DFS and BFS graph traversal algorithms were successfully implemented and executed. The experiment helped in understanding how graphs are represented and how different searching techniques traverse the vertices.DFS explores the graph depth-wise, while BFS explores the graph level-wise. DFS generally uses recursion or a stack, whereas BFS uses a queue. Both algorithms are important fundamental graph algorithms and have applications in path finding, network analysis, connectivity checking, cycle detection, and searching problems.
+
+
+# practical9
+
+summary:
+
+The practical focuses on the implementation of Prim’s Algorithm to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph. Prim’s Algorithm starts from any selected vertex and repeatedly selects the minimum-weight edge that connects a vertex already included in the MST to a vertex that is not yet included.A set of visited or selected vertices is maintained to avoid selecting the same vertex repeatedly. The process continues until all vertices are included in the MST. The algorithm ensures that no cycle is formed and produces a spanning tree with the minimum possible total edge weight.
+
+conclusion:
+
+Prim’s Algorithm was successfully implemented and executed to obtain the Minimum Spanning Tree of the given weighted graph. The algorithm selects the minimum-cost edge at each step while gradually connecting all vertices.The practical helped in understanding the concept of Minimum Spanning Trees, greedy algorithms, weighted graphs, and edge selection. Prim’s Algorithm is useful in applications such as network design, computer networks, electrical grids, road connections, and communication systems, where the goal is to connect all nodes with minimum total cost.
+
+
+
+# practical10
+
+summary:
+
+The practical focuses on the implementation of Kruskal’s Algorithm to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph. Kruskal’s Algorithm follows a greedy approach by first sorting all the edges in increasing order of their weights.The algorithm then selects the smallest-weight edge and adds it to the spanning tree if it does not create a cycle. A Union-Find (Disjoint Set) data structure is used to detect cycles efficiently. This process continues until all vertices are connected and the MST contains V − 1 edges.
+
+Conclusion:
+
+Thus Kruskal’s Algorithm was successfully implemented and executed to obtain the Minimum Spanning Tree of the given weighted graph. The algorithm selects the edges with the lowest weights while ensuring that no cycle is formed.The practical helped in understanding greedy algorithms, weighted graphs, Minimum Spanning Trees, edge sorting, and cycle detection using Union-Find. Kruskal’s Algorithm is useful in applications such as network design, communication networks, road networks, and connecting systems at minimum cost.
